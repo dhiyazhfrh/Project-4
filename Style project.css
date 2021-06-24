@@ -30,6 +30,7 @@ body{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+    margin-bottom: 25px;
 }
 
 .login-content{
