@@ -9,9 +9,6 @@
     }else if (empty($password)){
         echo "<script>alert('Password belum diisi')</script>";
         echo "<meta http-equiv='refresh' content='0 url=Login.php'>";
-    }else if(empty($username) && empty($password)){
-        echo "<script>alert('Form Tidak Terisi')</script>";
-        echo "<meta http-equiv='refresh' content='0 url=Login.php'>";
     }else{
         session_start();
         $login = mysqli_query($connect, "SELECT * FROM user WHERE username ='$username' and password='$password'");
