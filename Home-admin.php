@@ -17,7 +17,7 @@
                         <li><a href="#">Student</a></li>
                         <li><a href="#">Profile</a></li>
                         <li><a href="#">Manage</a></li>
-                        <li><a href="#">Log out</a></li>
+                        <li><a href="logout.php">Log out</a></li>
                     </ul>
                 </nav>
             </header>
