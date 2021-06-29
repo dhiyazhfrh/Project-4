@@ -13,7 +13,7 @@
                 <img class="logo" src="img/logotxt2.png">
                 <nav>
                     <ul class="nav__links">
-                        <li><a href="#">Class</a></li>
+                        <li><a href="Class.php">Class</a></li>
                         <li><a href="#">Student</a></li>
                         <li><a href="#">Profile</a></li>
                         <li><a href="#">Manage</a></li>
@@ -21,6 +21,11 @@
                     </ul>
                 </nav>
             </header>
+            <div class="container">
+                <div class="schedule">
+                    <h2>Schedule</h2>
+                </div>
+            </div>
         </div>
     </body>
 </html>
