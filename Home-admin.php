@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Home</title>
-        <link rel="stylesheet" type="text/css" href="Style Home -admin.css">
+        <link rel="stylesheet" type="text/css" href="Home_admin.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
