@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <img class="wave2" src="img/wave2.png">
         <header>
             <img class="logo" src="img/logotxt.png">
             <nav>
@@ -20,6 +21,13 @@
                 </ul>
             </nav>
         </header>
-        
+        <div class="container">
+            <img class="photo" src="img/photo.jpg">
+            <div class="text">
+                <h2>“ It takes a big heart to help shape little minds. Teaching is a greatest 
+                act of optimism.”</h2>    
+                <h2>-Colleen Wilcox</h2>
+            </div>
+        </div>
     </body>
 </html>
