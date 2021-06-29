@@ -2,16 +2,13 @@
 	padding: 0;
     margin: 0;
 	box-sizing: border-box;
-    background-color: white;
 }
 
-.wave2{
-    position: fixed;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
+body{
+    background-image: url(img/wave3.png);
+    background-size: cover;
 }
+
 
 li, a{
     font-family: 'Poppins', sans-serif;

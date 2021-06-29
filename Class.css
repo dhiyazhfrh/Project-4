@@ -2,15 +2,11 @@
 	padding: 0;
     margin: 0;
 	box-sizing: border-box;
-    background-color: white;
 }
 
-.wave2{
-    position: fixed;
-    height: 900px;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
+body{
+    background-image: url(img/wave2.png);
+    background-size: cover;
 }
 
 li, a{
@@ -60,21 +56,4 @@ header{
     margin-top: 30px;
     margin-right: 66px;
     margin-left: 106px;
-}
-
-.photo{
-    height: 380px;
-    align-items: flex-start;
-    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-}
-
-.text{
-    align-items: flex-end;
-    margin-left: 40px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: #333;
-    text-decoration: none;
 }
