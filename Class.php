@@ -8,24 +8,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div class="wave2">
-            <header>
-                <img class="logo" src="img/logotxt2.png">
-                <nav>
-                    <ul class="nav__links">
-                        <li><a href="Class.php">Class</a></li>
-                        <li><a href="#">Student</a></li>
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">Manage</a></li>
-                        <li><a href="logout.php">Log out</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="container">
-                <div class="schedule">
-                    <h2>Schedule</h2>
+        <header>
+            <img class="logo" src="img/logotxt2.png">
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="Class.php">Class</a></li>
+                    <li><a href="#">Student</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Manage</a></li>
+                    <li><a href="logout.php">Log out</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <img class="schedule" src="img/schedule.png"> 
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <img class="room" src="img/room.png"> 
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <img class="time" src="img/time.png"> 
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
