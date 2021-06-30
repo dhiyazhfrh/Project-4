@@ -18,7 +18,7 @@
         $p = mysqli_fetch_array($query);
         $level = $p['level'];
         if($level=='admin'){
-            echo "<meta http-equiv='refresh' content='0 url=Home-admin.php'>";
+            echo "<meta http-equiv='refresh' content='0 url=Home_admin.php'>";
         }else if($level=='staff'){
             echo "<meta http-equiv='refresh' content='0 url=Home.php'>";
         }
