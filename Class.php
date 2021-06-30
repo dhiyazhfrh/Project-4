@@ -22,24 +22,30 @@
         </header>
         <main>
             <div class="cards">
-                <div class="card-single">
-                    <div>
-                        <img class="schedule" src="img/schedule.png">
-                        <h2>Schedule</h2>
+                <a href="#">
+                    <div class="card-single">
+                        <div>
+                            <img class="schedule" src="img/schedule.png">
+                            <h2>Schedule</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="card-single2">
-                    <div>
-                        <img class="room" src="img/room.png">
-                        <h2>Room</h2>
+                </a>  
+                <a href="#">  
+                    <div class="card-single2">
+                        <div>
+                            <img class="room" src="img/room.png">
+                            <h2>Room</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="card-single3">
-                    <div>
-                        <img class="time" src="img/time.png">
-                        <h2>Time</h2> 
+                </a>
+                <a href="#">
+                    <div class="card-single3">
+                        <div>
+                            <img class="time" src="img/time.png">
+                            <h2>Time</h2> 
+                        </div>
                     </div>
-                </div>
+                </a>    
             </div>
         </main>
     </body>
