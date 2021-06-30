@@ -24,7 +24,8 @@
             <div class="cards">
                 <div class="card-single">
                     <div>
-                        <img class="schedule" src="img/schedule.png"> 
+                        <img class="schedule" src="img/schedule.png">
+                        <h2>Schedule</h2>
                     </div>
                 </div>
                 <div class="card-single">
@@ -35,7 +36,8 @@
                 </div>
                 <div class="card-single">
                     <div>
-                        <img class="time" src="img/time.png"> 
+                        <img class="time" src="img/time.png">
+                        <h2>Time</h2> 
                     </div>
                 </div>
             </div>
