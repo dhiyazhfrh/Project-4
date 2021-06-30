@@ -10,7 +10,7 @@
     <body>
         <div class="container">
             <div class="input">
-                <a href="View_admin.php"> < Back</a>
+                <a href="View_schedule_admin.php"> < Back</a>
                 <h5>New Schedule</h5>
                 <form action="#input" name="schedule" method="post">
                     <div class="input-1">
