@@ -20,7 +20,7 @@
         if($level=='admin'){
             echo "<meta http-equiv='refresh' content='0 url=Home_admin.php'>";
         }else if($level=='staff'){
-            echo "<meta http-equiv='refresh' content='0 url=Home.php'>";
+            echo "<meta http-equiv='refresh' content='0 url=Home_user.php'>";
         }
     ?>
     </body>
