@@ -21,7 +21,7 @@
         </header>
         <main>
             <div class="cards">
-                <a href="#">
+                <a href="View_schedule_user.php">
                     <div class="card-single">
                         <div>
                             <img class="schedule" src="img/schedule.png">
