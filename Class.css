@@ -83,10 +83,12 @@ header{
     border-radius: 30px;
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
     cursor: pointer;
-    transition: ;
+    transition: 1s;
 }
 
 .card-single:hover{
+    width: 360px;
+    height: 260px;
     background-color: #7EA016;
 }
 
@@ -100,9 +102,12 @@ header{
     border-radius: 30px;
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    transition: 1s;
 }
 
 .card-single2:hover{
+    width: 360px;
+    height: 260px;
     background-color: #7D5D90;
 }
 
@@ -116,9 +121,12 @@ header{
     border-radius: 30px;
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    transition: 1s;
 }
 
 .card-single3:hover{
+    width: 360px;
+    height: 260px;
     background-color: #E39600;
 }
 
