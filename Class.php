@@ -28,13 +28,13 @@
                         <h2>Schedule</h2>
                     </div>
                 </div>
-                <div class="card-single">
+                <div class="card-single2">
                     <div>
                         <img class="room" src="img/room.png">
                         <h2>Room</h2>
                     </div>
                 </div>
-                <div class="card-single">
+                <div class="card-single3">
                     <div>
                         <img class="time" src="img/time.png">
                         <h2>Time</h2> 
