@@ -84,7 +84,7 @@ header{
 	display: flex;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 40px;
+    margin-top: 70px;
     padding: 5px;
 	width: 160px;
 	border-radius: 15px;
@@ -112,8 +112,10 @@ header{
 
 .content-table {
     border-collapse: collapse;
-    margin: 25px ;
-    min-width: 1300px;
+    margin-top: 25px ;
+    margin-left: 100px;
+    margin-right: 130px;
+    min-width: 1330px;
     border-radius: 20px;
     border: 2px;
     color: #D2A680;
