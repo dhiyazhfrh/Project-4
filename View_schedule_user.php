@@ -32,14 +32,12 @@
                     <th>Grade</th>
                     <th>Room</th>
                     <th>Time</th>
-                    <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
                     <tr>
                       <td>Pre A</td>
                       <td>Preschool</td>
-                      <td>#</td>
                       <td>#</td>
                       <td>#</td>
                     </tr>
