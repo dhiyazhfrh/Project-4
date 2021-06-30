@@ -113,7 +113,7 @@ header{
 .content-table {
     border-collapse: collapse;
     margin: 25px 0;
-    min-width: 400px;
+    min-width: 1300px;
     border-radius: 20px;
     border: 2px;
     color: #D2A680;
@@ -125,9 +125,9 @@ header{
   
   .content-table thead tr {
     margin-top: 40px;
-    border: 2px solid;
-    border-color: #D2A680;
-    background-color: white;
+    border-radius: 20px;
+    background-color: #D2A680;
+    color: white;
     text-align: left;
     font-weight: bold;
   }
