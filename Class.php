@@ -29,7 +29,8 @@
                 </div>
                 <div class="card-single">
                     <div>
-                        <img class="room" src="img/room.png"> 
+                        <img class="room" src="img/room.png">
+                        <h2>Room</h2>
                     </div>
                 </div>
                 <div class="card-single">
