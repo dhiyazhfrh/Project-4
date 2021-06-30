@@ -22,7 +22,7 @@
         </header>
         <main>
             <div class="cards">
-                <a href="#">
+                <a href="Input_schedule.html">
                     <div class="card-single">
                         <div>
                             <img class="schedule" src="img/schedule.png">
