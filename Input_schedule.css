@@ -112,7 +112,7 @@ header{
 
 .content-table {
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 25px ;
     min-width: 1300px;
     border-radius: 20px;
     border: 2px;
