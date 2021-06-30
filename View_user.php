@@ -12,7 +12,7 @@
             <img class="logo" src="img/logotxt2.png">
             <nav>
                 <ul class="nav__links">
-                    <li><a href="Class_user.html">Class</a><div class="rec"></div></li>
+                    <li><a href="View_user.html">Class</a><div class="rec"></div></li>
                     <li><a href="#">Student</a></li>
                     <li><a href="#">Profile</a></li>
                     <li><a href="logout.php">Log out</a></li>
