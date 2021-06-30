@@ -24,7 +24,7 @@
             <img class="schedule" src="img/schedule.png">
             <h2>Schedule</h2>
         </div>
-        <a href="#">
+        <a href="View_schedule_admin.php">
             <input type="button" class="btn" value="+ Add new">
         </a>
             <div class="container">
