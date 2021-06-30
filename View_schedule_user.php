@@ -12,7 +12,7 @@
             <img class="logo" src="img/logotxt.png">
             <nav>
                 <ul class="nav__links">
-                    <li><a href="Class_admin.php">Class</a><div class="rec"></div></li>
+                    <li><a href="View_user.php">Class</a><div class="rec"></div></li>
                     <li><a href="#">Student</a></li>
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Manage</a></li>
@@ -24,9 +24,6 @@
             <img class="schedule" src="img/schedule.png">
             <h2>Schedule</h2>
         </div>
-        <a href="#">
-            <input type="button" class="btn" value="+ Add new">
-        </a>
             <div class="container">
             <table class="content-table">
                 <thead>
