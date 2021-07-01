@@ -24,28 +24,26 @@
             <img class="profile" src="img/profile.svg">
             <h2>Profile</h2>
         </div>
-        <div class="container">
-            <div class="input">
-                <form action="#input" name="schedule" method="post">
-                    <div class="input-1">
-                        <h2>Full Name</h2>
-                        <input type="text" class="full_name">
-                    </div>
-                    <div class="input-1">
-                        <h2>Email</h2>
-                        <input type="email" class="mail">
-                    </div>
-                    <div class="input-1">
-                        <h2>Date of Birth</h2>
-                        <input type="date" class="dob">
-                    </div>
-                    <div class="input-1">
-                        <h2>Position</h2>
-                        <input type="text" class="post">
-                    </div>
-                    <input type="submit" class="btn" value="Save">
-                </form>
-            </div>
+        <div class="input">
+            <form action="#input" name="schedule" method="post">
+                <div class="input-1">
+                    <h2>Full Name</h2>
+                    <input type="text" class="full_name">
+                </div>
+                <div class="input-1">
+                    <h2>Email</h2>
+                    <input type="email" class="mail">
+                </div>
+                <div class="input-1">
+                    <h2>Date of Birth</h2>
+                    <input type="date" class="dob">
+                </div>
+                <div class="input-1">
+                    <h2>Position</h2>
+                    <input type="text" class="posit">
+                </div>
+                <input type="submit" class="btn" value="Save">
+            </form>
         </div>
     </body>
 </html>
