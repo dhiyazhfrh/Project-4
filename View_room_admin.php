@@ -52,7 +52,7 @@ if (!isset($_SESSION['username'])){
                       <td><?php echo $room['capacity'];?></td>
                       <td><div class="action">
                           <img class="edit" src="img/edit.svg">
-                          <a href="delete_room.php?id=<?php echo $room['id']?>"><img class="delete" src="img/delete.svg""></div></td></a>
+                          <a href="delete_room.php?id=<?php echo $room['room_id']?>"><img class="delete" src="img/delete.svg""></div></td></a>
                     </tr>
                 <tbody>
                 <?php
