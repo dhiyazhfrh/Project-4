@@ -32,11 +32,11 @@
                 <tbody>
                     <tr>
                         <td>
-                            Full Name
-                            <br>Email
-                            <br>Date of Birth
-                            <br>Phone Number
-                            <br>Position</td>
+                            Full Name          :
+                            <br>Email          :
+                            <br>Date of Birth  :
+                            <br>Phone Number   :
+                            <br>Position       :</td>
                         <td>
                             Full Name
                             <br>Email
