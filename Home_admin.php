@@ -21,8 +21,7 @@ if (!isset($_SESSION['username'])){
                 <ul class="nav__links">
                     <li><a href="View_admin.php">Class</a></li>
                     <li><a href="View_student_admin.php">Student</a></li>
-                    <li><a href="Profile_admin.php">Profile</a></li>
-                    <li><a href="#">Manage</a></li>
+                    <li><a href="View_manage_admin.php">Manage</a></li>
                     <li><a href="logout.php">Log out</a></li>
                 </ul>
             </nav>
