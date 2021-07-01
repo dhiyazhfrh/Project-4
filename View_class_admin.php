@@ -29,7 +29,7 @@ if (!isset($_SESSION['username'])){
         </header>
         <div class="title">
             <img class="schedule" src="img/schedule.png">
-            <h2>class</h2>
+            <h2>Class</h2>
         </div>
         <a href="Input_class.php">
             <input type="button" class="btn" value="+ Add new">
