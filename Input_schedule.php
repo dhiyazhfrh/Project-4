@@ -12,24 +12,14 @@
             <div class="input">
                 <a href="View_schedule_admin.php"> < Back</a>
                 <h5>New Schedule</h5>
-                <form action="#input" name="schedule" method="post">
+                <form action="#input" name="time" method="post">
                     <div class="input-1">
-                        <h2>Class Name</h2>
-                        <input type="text" class="class_name">
-                    </div>
-                    <div class="input-1">
-                        <h2>Grade</h2>
-                        <input type="text" class="grade">
-                    </div>
-                    <div class="input-1">
-                        <h2>Room</h2>
-                        <select name="room" class="room">
-                            <option value="">-- Choose room --</option></select>
+                        <h2>Day</h2>
+                        <input type="text" class="day">
                     </div>
                     <div class="input-1">
                         <h2>Time</h2>
-                        <select name="time" class="time">
-                            <option value="">-- Choose time --</option></select>
+                        <input type="time" class="time"><b> - </b> <input type="time" class="time">
                     </div>
                     <input type="submit" class="btn" value="Save">
                 </form>

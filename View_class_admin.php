@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Home</title>
-        <link rel="stylesheet" type="text/css" href="View_schedule_admin.css">
+        <link rel="stylesheet" type="text/css" href="View_class_admin.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -21,25 +21,29 @@
             </nav>
         </header>
         <div class="title">
-            <img class="time" src="img/time.png">
-            <h2>Schedule</h2>
+            <img class="schedule" src="img/schedule.png">
+            <h2>class</h2>
         </div>
-        <a href="Input_schedule.php">
+        <a href="Input_class.php">
             <input type="button" class="btn" value="+ Add new">
         </a>
             <div class="container">
             <table class="content-table">
                 <thead>
                 <tr>
-                    <th>Day</th>
+                    <th>Class Name</th>
+                    <th>Grade</th>
+                    <th>Room</th>
                     <th>Time</th>
                     <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
                     <tr>
-                      <td>Tuesday</td>
-                      <td>10.00 - 12.00</td>
+                      <td>Pre A</td>
+                      <td>Preschool</td>
+                      <td>#</td>
+                      <td>#</td>
                       <td><div class="action">
                           <img class="edit" src="img/edit.svg" href="#">
                           <img class="delete" src="img/delete.svg" href="#"></div></td>

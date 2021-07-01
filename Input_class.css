@@ -53,30 +53,10 @@
 	font-family: 'Poppins', sans-serif;
 }
 
-.input-1 b{
-    justify-content: center;
-    margin: 10px;
-    color: #D2A680;
-    font-size: 14px;
-	font-family: 'Poppins', sans-serif;
-}
-
-.day{
+.class_name, .grade, .room, .time{
     padding: 5px;
     opacity: 80%;
     width: 100%;
-    height: 40px;
-    background-color: #f4cba7;
-    border-radius: 10px;
-    color: white;
-    font-size: 16px;
-	font-family: 'Poppins', sans-serif;
-}
-
-.time{
-    padding: 5px;
-    opacity: 80%;
-    width: 100px;
     height: 40px;
     background-color: #f4cba7;
     border-radius: 10px;

@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Home</title>
-        <link rel="stylesheet" type="text/css" href="View_schedule_user.css">
+        <link rel="stylesheet" type="text/css" href="View_class_user.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -22,7 +22,7 @@
         </header>
         <div class="title">
             <img class="schedule" src="img/schedule.png">
-            <h2>Schedule</h2>
+            <h2>Class</h2>
         </div>
             <div class="container">
             <table class="content-table">

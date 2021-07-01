@@ -21,15 +21,15 @@
         </header>
         <main>
             <div class="cards">
-                <a href="View_schedule_user.php">
+                <a href="View_class_user.php">
                     <div class="card-single">
                         <div>
                             <img class="schedule" src="img/schedule.png">
-                            <h2>Schedule</h2>
+                            <h2>Class</h2>
                         </div>
                     </div>
                 </a>  
-                <a href="#">  
+                <a href="View_room_user.php">  
                     <div class="card-single2">
                         <div>
                             <img class="room" src="img/room.png">
@@ -37,11 +37,11 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="View_schedule_user.php">
                     <div class="card-single3">
                         <div>
                             <img class="time" src="img/time.png">
-                            <h2>Time</h2> 
+                            <h2>Schedule</h2> 
                         </div>
                     </div>
                 </a>    
