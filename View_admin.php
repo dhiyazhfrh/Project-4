@@ -16,7 +16,7 @@ if (!isset($_SESSION['username'])){
     </head>
     <body>
         <header>
-            <img class="logo" src="img/logotxt2.png">
+            <img class="logo" src="img/logotxt.png" href="Home_admin.php">
             <nav>
                 <ul class="nav__links">
                     <li><a href="View_admin.php">Class</a><div class="rec"></div></li>

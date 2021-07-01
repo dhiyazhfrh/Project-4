@@ -20,7 +20,7 @@ if (!isset($_SESSION['username'])){
             <nav>
                 <ul class="nav__links">
                     <li><a href="View_admin.php">Class</a></li>
-                    <li><a href="#">Student</a></li>
+                    <li><a href="View_student_admin.php">Student</a></li>
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Manage</a></li>
                     <li><a href="logout.php">Log out</a></li>

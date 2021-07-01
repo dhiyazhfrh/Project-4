@@ -9,7 +9,7 @@
     </head>
     <body>
         <header>
-            <img class="logo" src="img/logotxt.png">
+            <img class="logo" src="img/logotxt.png" href="Home_admin.php">
             <nav>
                 <ul class="nav__links">
                     <li><a href="View_admin.php">Class</a></li>
@@ -35,11 +35,13 @@
                     <th>Gender</th>
                     <th>Date of Birth</th>
                     <th>Class</th>
+                    <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
                     <tr>
-                      <td>Tuesday</td>
+                      <td>Dhiya</td>
+                      <td>#</td>
                       <td>#</td>
                       <td>#</td>
                       <td><div class="action">
