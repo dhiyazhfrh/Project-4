@@ -31,7 +31,7 @@
             <table class="content-table">
                 <thead>
                 <tr>
-                    <th>Full name</th>
+                    <th>Full Name</th>
                     <th>Gender</th>
                     <th>Date of Birth</th>
                     <th>Class</th>
