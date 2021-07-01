@@ -22,16 +22,26 @@ if (!isset($_SESSION['username'])){
                 <form action="#input" name="schedule" method="post">
                     <div class="input-1">
                         <h2>Class Name</h2>
-                        <input type="text" class="class_name">
+                        <input type="text" name="class" class="class_name">
                     </div>
                     <div class="input-1">
                         <h2>Grade</h2>
-                        <input type="text" class="grade">
+                        <input type="text" name="grade" class="grade">
                     </div>
                     <div class="input-1">
                         <h2>Room</h2>
-                        <select name="room" class="room">
-                            <option value="">-- Choose room --</option></select>
+                        <select name="room_cb" class="room">
+                            <?php
+                            $query = mysqli_query($connect, "SELECT * FROM room");
+                            $no=0;
+                            while ($room = mysqli_fetch_array($query)){
+                            $no++;
+                            ?>
+                            <option value="<?php echo $room['room_id'];?>"><?php echo $room['room_name'];?></option>
+                            <?php
+                                }
+                            ?>
+                            </select>
                     </div>
                     <div class="input-1">
                         <h2>Schedule</h2>
