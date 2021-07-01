@@ -44,8 +44,8 @@ if (!isset($_SESSION['username'])){
                 </thead>
                 <tbody>
                     <tr>
-                      <td>Tuesday</td>
-                      <td>10.00 - 12.00</td>
+                      <td>#</td>
+                      <td>#</td>
                       <td><div class="action">
                           <img class="edit" src="img/edit.svg" href="#">
                           <img class="delete" src="img/delete.svg" href="#"></div></td>

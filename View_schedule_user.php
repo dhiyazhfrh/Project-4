@@ -39,8 +39,8 @@ if (!isset($_SESSION['username'])){
                 </thead>
                 <tbody>
                     <tr>
-                      <td>Tuesday</td>
-                      <td>10.00 - 12.00</td>
+                      <td>#</td>
+                      <td>#</td>
                     </tr>
                 <tbody>
             </table>
