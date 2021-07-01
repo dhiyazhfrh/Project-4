@@ -5,7 +5,7 @@
 }
 
 .rec{
-    width: 60px;
+    width: 85px;
     height: 7px;
     background-color: #f4cba7;
     align-items: center;
@@ -51,7 +51,7 @@ header{
     color: #D2A680, 100%;
 }
 
-.profile{
+.manage{
     width: 50px;
     background-size: cover;
     align-items: flex-start;
@@ -105,23 +105,59 @@ header{
     display: flex;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 25px;
     align-items: flex-start;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.10);
 }
 
-.content1 {
-    padding: 30px;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
+.content-table {
+    border-collapse: collapse;
+    margin-top: 25px ;
+    min-width: 1330px;
+    border-radius: 20px;
     color: #D2A680;
     overflow: hidden;
     font-size: 20px;
 	font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.10);
+}
+  
+.content-table thead tr {
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: #D2A680;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+  
+.content-table th,
+.content-table td {
+    padding: 12px 25px;
 }
 
-.content2{
-    margin-left: 100px;
+.edit {
+    padding: 5px;
+    margin: 5px;
+    width: 40px;
+    background-color: #f4cba7;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit:hover{
+	background-color: #D2A680;
+}
+
+.delete{
+    padding: 5px;
+    margin: 5px;
+    width: 40px;
+    background-color: #f4cba7;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete:hover{
+	background-color: #D2A680;
 }

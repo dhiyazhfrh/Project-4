@@ -103,17 +103,14 @@ header{
 
 .container{
     display: flex;
-    margin-left: 130px;
+    margin-left: 100px;
     margin-right: 100px;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .content-table {
     border-collapse: collapse;
     margin-top: 25px ;
-    margin-left: 100px;
-    margin-right: 130px;
     min-width: 1330px;
     border-radius: 20px;
     color: #D2A680;
@@ -121,21 +118,20 @@ header{
     font-size: 20px;
 	font-family: 'Poppins', sans-serif;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.10);
-  }
+}
   
-  .content-table thead tr {
+.content-table thead tr {
     margin-top: 40px;
     border-radius: 20px;
     background-color: #D2A680;
     color: white;
     text-align: left;
-    font-weight: bold;
-  }
+    font-weight: bold;  }
   
-  .content-table th,
-  .content-table td {
+.content-table th,
+.content-table td {
     padding: 12px 25px;
-  }
+}
 
 .edit {
     padding: 5px;
