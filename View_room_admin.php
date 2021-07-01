@@ -1,3 +1,10 @@
+<?php
+include "koneksi.php";
+session_start();
+if (!isset($_SESSION['username'])){
+    header('location:login.php');
+}
+?>
 <html>
     <head>
         <meta charset="utf-8">
@@ -36,15 +43,22 @@
                     <th>Action</th>
                 </tr>
                 </thead>
+                <?php
+                    $query = mysqli_query($connect , "SELECT * FROM room");
+                    while ($room = mysqli_fetch_array($query)){
+                ?>
                 <tbody>
                     <tr>
-                      <td>B201</td>
-                      <td>20</td>
+                      <td><?php echo $room['room_name']; ?></td>
+                      <td><?php echo $room['capacity'];?></td>
                       <td><div class="action">
                           <img class="edit" src="img/edit.svg" href="#">
                           <img class="delete" src="img/delete.svg" href="#"></div></td>
                     </tr>
                 <tbody>
+                <?php
+                }
+                ?>    
             </table>
         </div>
     </body>
