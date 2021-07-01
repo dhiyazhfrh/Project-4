@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 29, 2021 at 06:19 AM
+-- Generation Time: Jul 01, 2021 at 08:15 AM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.19
 
@@ -21,6 +21,27 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `kideapp` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `kideapp`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `room`
+--
+
+CREATE TABLE IF NOT EXISTS `room` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `room_name` varchar(30) NOT NULL,
+  `capacity` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `room`
+--
+
+INSERT INTO `room` (`id`, `room_name`, `capacity`) VALUES
+(1, 'Sample', 20),
+(5, 'sample3', 15);
 
 -- --------------------------------------------------------
 
