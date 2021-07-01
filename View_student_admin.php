@@ -12,8 +12,8 @@
             <img class="logo" src="img/logotxt.png">
             <nav>
                 <ul class="nav__links">
-                    <li><a href="View_admin.php">Class</a><div class="rec"></div></li>
-                    <li><a href="View_student_admin.php">Student</a></li>
+                    <li><a href="View_admin.php">Class</a></li>
+                    <li><a href="View_student_admin.php">Student</a><div class="rec"></div></li>
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Manage</a></li>
                     <li><a href="logout.php">Log out</a></li>
