@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Home</title>
-        <link rel="stylesheet" type="text/css" href="View_schedule.css">
+        <link rel="stylesheet" type="text/css" href="View_schedule_admin.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -44,8 +44,11 @@
                       <td>Preschool</td>
                       <td>#</td>
                       <td>#</td>
-                      <td>#</td>
+                      <td><div class="action">
+                          <img class="edit" src="img/edit.svg" href="#">
+                          <img class="delete" src="img/delete.svg" href="#"></div></td>
                     </tr>
+                <tbody>
             </table>
         </div>
     </body>
