@@ -55,7 +55,7 @@ if (!isset($_SESSION['username'])){
                     <td><?php echo $schedule['start_time'];?></td>
                     <td><?php echo $schedule['end_time'];?></td>
                     <td><div class="action">
-                      <a href="Input_schedule.php"><img class="edit" src="img/edit.svg" href="#"></a>
+                      <a href="edit_schedule.php"><img class="edit" src="img/edit.svg" href="#"></a>
                       <a href="delete_schedule.php?id=<?php echo $schedule['time_id']?>"><img class="delete" src="img/delete.svg"></a></div></td>
                 </tr>
                 <tbody>
