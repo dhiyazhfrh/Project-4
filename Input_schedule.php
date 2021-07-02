@@ -21,6 +21,9 @@ if (!isset($_SESSION['username'])){
                 <h5>New Schedule</h5>
                 <form action="#input" name="time" method="post">
                     <div class="input-1">
+                        <h2>Code</h2>
+                        <input type="text" class="code"><b>
+                    <div class="input-1">
                         <h2>Day</h2>
                         <select name="day" class="day">
                             <option value="Monday">Monday</option>
