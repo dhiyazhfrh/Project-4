@@ -30,7 +30,7 @@ if (!isset($_SESSION['username'])){
                     </div>
                     <div class="input-1">
                         <h2>Room</h2>
-                        <select name="room_cb" class="room">
+                        <select name="room_id" class="room">
                             <?php
                             $query = mysqli_query($connect, "SELECT * FROM room");
                             $no=0;
