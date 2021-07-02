@@ -17,7 +17,6 @@
     header('location:input_schedule.php');
  }else{
     $query = mysqli_query($connect, "INSERT INTO tbl_time (code, day_time, start_time, end_time) VALUES('$code', '$day', '$time1', '$time2')");
-    echo"<script>alert('Success 1')";
     header('location:View_schedule_admin.php');
  }
  

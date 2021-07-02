@@ -7,6 +7,19 @@ if (!isset($_SESSION['username'])){
 ?>
 <html>
     <head>
+        <style>
+            .cod{
+    padding: 4px;
+    opacity: 80%;
+    width: 100%;
+    height: 40px;
+    background-color: #f4cba7;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+}
+        </style>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Home</title>
