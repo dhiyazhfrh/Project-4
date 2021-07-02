@@ -22,7 +22,7 @@ if (!isset($_SESSION['username'])){
                 <form action="Input_schedule_process.php" method="post">
                     <div class="input-1">
                         <h2>Code</h2>
-                        <input type="text" name="code1" class="code"><b>
+                        <input type="text" name="code1" class="cod"><b>
                     <div class="input-1">
                         <h2>Day</h2>
                         <select name="day" class="day">
