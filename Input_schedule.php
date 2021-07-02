@@ -19,10 +19,10 @@ if (!isset($_SESSION['username'])){
             <div class="input">
                 <a href="View_schedule_admin.php"> < Back</a>
                 <h5>New Schedule</h5>
-                <form action="#input" name="time" method="post">
+                <form action="Input_schedule_process.php" method="post">
                     <div class="input-1">
                         <h2>Code</h2>
-                        <input type="text" class="code"><b>
+                        <input type="text" name="code1" class="code"><b>
                     <div class="input-1">
                         <h2>Day</h2>
                         <select name="day" class="day">
@@ -35,7 +35,7 @@ if (!isset($_SESSION['username'])){
                     </div>
                     <div class="input-1">
                         <h2>Time</h2>
-                        <input type="time" class="time"><b> - </b> <input type="time" class="time">
+                        <input type="time" name="start" class="time"><b> - </b> <input type="time" name="end" class="time">
                     </div>
                     <input type="submit" class="btn" value="Save">
                 </form>
