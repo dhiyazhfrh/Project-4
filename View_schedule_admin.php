@@ -39,7 +39,8 @@ if (!isset($_SESSION['username'])){
                 <tr>
                     <th>Code</th>
                     <th>Day</th>
-                    <th>Time</th>
+                    <th>Start Time</th>
+                    <th>End Time </th>
                     <th>Action</th>
                 </tr>
                 </thead>
