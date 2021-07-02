@@ -35,10 +35,17 @@ if (!isset($_SESSION['username'])){
                 <form action="Input_schedule_process.php" method="post">
                     <div class="input-1">
                         <h2>Code</h2>
-                        <input type="text" name="code1" class="cod"><b>
+                        <?php
+                            $id = isset($_GET['id'])? $_GET['id']:'';
+
+                            $query = mysqli_query($connect, "SELECT * FROM tbl_time WHERE time_id = '$id'");
+                            $time = mysqli_fetch_array($query);
+
+                        ?>
+                        <input type="text" name="code1" class="cod" value="<?php echo $time['code'];?>"><b>
                     <div class="input-1">
                         <h2>Day</h2>
-                        <select name="day" class="day">
+                        <select name="day" class="day" value ="<?php echo $time['day_time'];?>">
                             <option value="Monday">Monday</option>
                             <option value="Tuesday">Tuesday</option>
                             <option value="Wednesday">Wednesday</option>
@@ -48,7 +55,7 @@ if (!isset($_SESSION['username'])){
                     </div>
                     <div class="input-1">
                         <h2>Time</h2>
-                        <input type="time" name="start" class="time"><b> - </b> <input type="time" name="end" class="time">
+                        <input type="time" name="start" class="time" value="<?php echo $time['start_time'];?>"><b> - </b> <input type="time" name="end" class="time" value="<?php echo $time['end_time'];?>">
                     </div>
                     <input type="submit" class="btn" value="Save">
                 </form>
