@@ -43,16 +43,24 @@ if (!isset($_SESSION['username'])){
                     <th>Action</th>
                 </tr>
                 </thead>
+                <?php
+                    $query = mysqli_query($connect, "SELECT * FROM tbl_time");
+                    while ($schedule = mysqli_fetch_array($query)){ 
+                ?>
                 <tbody>
                 <tr>
-                    <td>#</td>
-                    <td>#</td>
-                    <td>#</td>
+                    <td><?php echo $schedule['code'];?></td>
+                    <td><?php echo $schedule['day_time'];?></td>
+                    <td><?php echo $schedule['start_time'];?></td>
+                    <td><?php echo $schedule['end_time'];?></td>
                     <td><div class="action">
                       <img class="edit" src="img/edit.svg" href="#">
                       <img class="delete" src="img/delete.svg" href="#"></div></td>
                 </tr>
                 <tbody>
+                <?php
+                    }
+                ?>
             </table>
         </div>
     </body>
