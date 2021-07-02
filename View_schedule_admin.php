@@ -37,19 +37,21 @@ if (!isset($_SESSION['username'])){
             <table class="content-table">
                 <thead>
                 <tr>
+                    <th>Code</th>
                     <th>Day</th>
                     <th>Time</th>
                     <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                      <td>#</td>
-                      <td>#</td>
-                      <td><div class="action">
-                          <img class="edit" src="img/edit.svg" href="#">
-                          <img class="delete" src="img/delete.svg" href="#"></div></td>
-                    </tr>
+                <tr>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td><div class="action">
+                      <img class="edit" src="img/edit.svg" href="#">
+                      <img class="delete" src="img/delete.svg" href="#"></div></td>
+                </tr>
                 <tbody>
             </table>
         </div>
