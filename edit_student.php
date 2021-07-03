@@ -40,6 +40,7 @@ if (!isset($_SESSION['username'])){
                         <td><h2>Gender</h2></td>
                         <td>
                             <select name="gender" class="gender">
+                                <option value="<?php echo $data['gender']?>" selected hidden><?php echo $data['gender']?></option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                             </select>

@@ -39,7 +39,8 @@ if (!isset($_SESSION['username'])){
                     <tr>
                         <td><h2>Day</h2></td>
                         <td>
-                        <select name="day" class="day" value ="<?php echo $time['day_time'];?>">
+                        <select name="day" class="day">
+                            <option value="<?php echo $time['day_time'];?>" selected hidden><?php echo $time['day_time'];?></option>
                             <option value="Monday">Monday</option>
                             <option value="Tuesday">Tuesday</option>
                             <option value="Wednesday">Wednesday</option>
