@@ -22,23 +22,30 @@ if (!isset($_SESSION['username'])){
                 <form action="#input" name="schedule" method="post">
                     <div class="input-1">
                         <h2>Username</h2>
-                        <input type="text" class="username">
+                        <input type="text" name="username" class="username">
+                    </div>
+                    <div class="input-1">
+                        <h2>Password</h2>
+                        <input type="password" name="pass" class="username">
                     </div>
                     <div class="input-1">
                         <h2>Full Name</h2>
-                        <input type="text" class="full_name">
+                        <input type="text" name="fullname" class="full_name">
                     </div>
                     <div class="input-1">
                         <h2>Email</h2>
-                        <input type="email" class="mail">
+                        <input type="email" name="email" class="mail">
                     </div>
                     <div class="input-1">
                         <h2>Phone Number</h2>
-                        <input type="tel" class="phone">
+                        <input type="tel" name="number" class="phone">
                     </div>
                     <div class="input-1">
                         <h2>Position</h2>
-                        <input type="text" class="post">
+                        <select name="level" class="post">
+                            <option value="admin">Admin</option>
+                            <option value="staff">Staff</option>
+                        </select>
                     </div>
                     <input type="submit" class="btn" value="Save">
                 </form>

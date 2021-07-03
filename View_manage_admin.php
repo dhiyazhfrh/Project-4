@@ -37,7 +37,6 @@ if (!isset($_SESSION['username'])){
             <table class="content-table">
                 <thead>
                 <tr>
-                    <th>Username</th>
                     <th>Full Name</th>
                     <th>Email</th>
                     <th>Phone Number</th>
@@ -45,18 +44,24 @@ if (!isset($_SESSION['username'])){
                     <th>Action</th>
                 </tr>
                 </thead>
+                <?php
+                    $query = mysqli_query($connect, "SELECT * FROM user");
+                    while ($data = mysqli_fetch_array($query)){
+                ?>
                 <tbody>
                     <tr>
-                      <td>#</td>
-                      <td>#</td>
-                      <td>#</td>
-                      <td>#</td>
-                      <td>#</td>
+                      <td><?php echo $data['fullname'];?></td>
+                      <td><?php echo $data['email'];?></td>
+                      <td><?php echo $data['phone'];?></td>
+                      <td><?php echo $data['level'];?></td>
                       <td><div class="action">
                           <img class="edit" src="img/edit.svg" href="#">
                           <img class="delete" src="img/delete.svg" href="#"></div></td>
                     </tr>
                 <tbody>
+                <?php
+                    }
+                ?>
             </table>
         </div>
     </body>
