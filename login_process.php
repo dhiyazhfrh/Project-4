@@ -11,7 +11,7 @@
         echo "<meta http-equiv='refresh' content='0 url=Login.php'>";
     }else{
         session_start();
-        $login = mysqli_query($connect, "SELECT * FROM user WHERE username ='$username' and password='$password'");
+        $login = mysqli_query($connect, "SELECT * FROM user WHERE username ='$username' and pass='$password'");
         if (mysqli_num_rows($login)> 0){
             $_SESSION['username'] = $username;
             header("location:index.php");

@@ -16,7 +16,7 @@
         $username = $_SESSION['username'];
         $query = mysqli_query($connect, "SELECT * FROM user WHERE username = '$username'");
         $p = mysqli_fetch_array($query);
-        $level = $p['level'];
+        $level = $p['authority'];
         if($level=='admin'){
             echo "<meta http-equiv='refresh' content='0 url=Home_admin.php'>";
         }else if($level=='staff'){

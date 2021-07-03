@@ -53,7 +53,7 @@ if (!isset($_SESSION['username'])){
                       <td><?php echo $data['fullname'];?></td>
                       <td><?php echo $data['email'];?></td>
                       <td><?php echo $data['phone'];?></td>
-                      <td><?php echo $data['level'];?></td>
+                      <td><?php echo $data['authority'];?></td>
                       <td><div class="action">
                           <img class="edit" src="img/edit.svg" href="#">
                           <img class="delete" src="img/delete.svg" href="#"></div></td>
