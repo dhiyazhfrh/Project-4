@@ -21,10 +21,10 @@ if (!isset($_SESSION['username'])){
                 <h5>Edit Room</h5>
                 <?php
                 
-                    $id = isset($_GET['time_id'])? $_GET['time_id']:'';
+                    $id = isset($_GET['id'])? $_GET['id']:'';
 
-                    $query = mysqli_query($connect, "SELECT * FROM tbl_time WHERE time_id = '$id'");
-                    $time = mysqli_fetch_array($query);
+                    $query = mysqli_query($connect, "SELECT * FROM room WHERE room_id = '$id'");
+                    $room = mysqli_fetch_array($query);
 
                 ?>
                 
@@ -33,13 +33,13 @@ if (!isset($_SESSION['username'])){
                     <tr>
                         <td><h2>Room</h2></td>
                         <td>
-                            <input type="text" name="room" class="room" value="<?php echo $time['code']; ?>">
+                            <input type="text" name="room" class="room" value="<?php echo $room['room_name']; ?>">
                         </td>
                     </tr>
                     <tr>
                         <td><h2>Capacity</h2></td>
                         <td>
-                            <input type="number" name="capacity" class="cap" value="<?php echo $time['code']; ?>">
+                            <input type="number" name="capacity" class="cap" value="<?php echo $room['capacity']; ?>">
                         </td>
                     </tr>
 

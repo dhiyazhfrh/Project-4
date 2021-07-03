@@ -21,43 +21,53 @@ if (!isset($_SESSION['username'])){
                 <h5>Edit User</h5>
                 <?php
                 
-                    $id = isset($_GET['time_id'])? $_GET['time_id']:'';
+                    $id = isset($_GET['id'])? $_GET['id']:'';
 
-                    $query = mysqli_query($connect, "SELECT * FROM tbl_time WHERE time_id = '$id'");
-                    $time = mysqli_fetch_array($query);
+                    $query = mysqli_query($connect, "SELECT * FROM user WHERE id = '$id'");
+                    $data = mysqli_fetch_array($query);
 
                 ?>
                 
-                <form action="update_akun.php" method="POST">
+                <form action="update_manage.php" method="POST">
                 <table class="input-1">
                     <tr>
                         <td><h2>Username</h2></td>
                         <td>
-                            <input type="text" name="username" class="username" value="<?php echo $time['code']; ?>">
+                            <input type="text" name="username" class="username" value="<?php echo $data['username']; ?>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h2>Password</h2></td>
+                        <td>
+                            <input type="text" name="pass" class="fullname" value="<?php echo $data['pass']; ?>">
                         </td>
                     </tr>
                     <tr>
                         <td><h2>Full Name</h2></td>
                         <td>
-                            <input type="text" name="fullname" class="fullname" value="<?php echo $time['code']; ?>">
+                            <input type="text" name="fullname" class="fullname" value="<?php echo $data['fullname']; ?>">
                         </td>
                     </tr>
                     <tr>
                         <td><h2>Email</h2></td>
                         <td>
-                            <input type="email" name="email" class="email" value="<?php echo $time['code']; ?>">
+                            <input type="email" name="email" class="email" value="<?php echo $data['email']; ?>">
                         </td>
                     </tr>
                     <tr>
                         <td><h2>Phone Number</h2></td>
                         <td>
-                            <input type="tel" name="phonenumber" class="phone" value="<?php echo $time['code']; ?>">
+                            <input type="tel" name="number" class="phone" value="<?php echo $data['phone']; ?>">
                         </td>
                     </tr>
                     <tr>
                         <td><h2>Position</h2></td>
                         <td>
-                            <input type="text" name="position" class="post" value="<?php echo $time['code']; ?>">
+                            <select name="level" class="post">
+                                <option value="<?php echo $data['authority'];?>" selected hidden><?php echo $data['authority'];?></option>
+                                <option value="admin">Admin</option>
+                                <option value="staff">Staff</option>
+                            </select>
                         </td>
                     </tr>
                     <tr>
