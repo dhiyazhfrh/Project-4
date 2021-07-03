@@ -21,11 +21,12 @@ if (!isset($_SESSION['username'])){
                 <h5>Edit Class</h5>
                 <?php
                 
-                    $id = isset($_GET['time_id'])? $_GET['time_id']:'';
+                    $id = isset($_GET['id'])? $_GET['id']:'';
 
-                    $query = mysqli_query($connect, "SELECT * FROM tbl_time WHERE time_id = '$id'");
-                    $time = mysqli_fetch_array($query);
-
+                    $query = mysqli_query($connect, "SELECT * FROM class_detail WHERE detail_id = '$id'");
+                    $data = mysqli_fetch_array($query);
+                    $room_id = $data['room_id'];
+                    $time_id = $data['time_id'];
                 ?>
                 
                 <form action="update_class.php" method="POST">
@@ -33,19 +34,24 @@ if (!isset($_SESSION['username'])){
                     <tr>
                         <td><h2>Class Name</h2></td>
                         <td>
-                            <input type="text" name="c_name" class="c_name" value="<?php echo $time['code']; ?>">
+                            <input type="text" name="class" class="c_name" value="<?php echo $data['class_name']; ?>">
                         </td>
                     </tr>
                     <tr>
                         <td><h2>Grade</h2></td>
                         <td>
-                            <input type="text" name="grade" class="grade" value="<?php echo $time['code']; ?>">
+                            <input type="text" name="grade" class="grade" value="<?php echo $data['grade']; ?>">
                         </td>
                     </tr>
 
                     <td><h2>Room</h2></td>
                         <td>
-                        <select name="room_id" class="room">
+                        <select name="room" class="room">
+                            <?php
+                                $query1 = mysqli_query($connect, "SELECT * FROM room WHERE room_id = '$room_id'");
+                                $sql1 = mysqli_fetch_array($query1);
+                            ?>
+                            <option value="<?php echo $sql1['room_name']; ?>" selected hidden><?php echo $sql1['room_name']; ?></option>
                             <?php
                             $query = mysqli_query($connect, "SELECT * FROM room");
                             $no=0;
@@ -62,14 +68,19 @@ if (!isset($_SESSION['username'])){
 
                     <td><h2>Schedule</h2></td>
                         <td>
-                        <select name="time_id" class="time">
+                        <select name="time" class="time">
                             <?php
-                            $query = mysqli_query($connect, "SELECT * FROM room");
+                                $query2 = mysqli_query($connect, "SELECT * FROM tbl_time WHERE time_id = '$time_id'");
+                                $sql2 = mysqli_fetch_array($query2);
+                            ?>
+                            <option value="<?php echo $sql2['code']; ?>" selected hidden><?php echo $sql2['code']; ?></option>
+                            <?php
+                            $query = mysqli_query($connect, "SELECT * FROM tbl_time");
                             $no=0;
-                            while ($room = mysqli_fetch_array($query)){
+                            while ($time = mysqli_fetch_array($query)){
                             $no++;
                             ?>
-                            <option value="<?php echo $room['time_id'];?>"><?php echo $room['code'];?></option>
+                            <option value="<?php echo $time['time_id'];?>"><?php echo $time['code'];?></option>
                             <?php
                                 }
                             ?>
