@@ -34,7 +34,7 @@ if (!isset($_SESSION['username'])){
                     </div>
                     <div class="input-1">
                         <h2>Phone Number</h2>
-                        <input type="number" class="phone">
+                        <input type="tel" class="phone">
                     </div>
                     <div class="input-1">
                         <h2>Position</h2>

@@ -44,7 +44,7 @@
                     <tr>
                         <td><h2>Phone Number</h2></td>
                         <td>
-                            <input type="number" name="phonenumber" class="phone" value="<?php echo $time['code']; ?>">
+                            <input type="tel" name="phonenumber" class="phone" value="<?php echo $time['code']; ?>">
                         </td>
                     </tr>
                     <tr>
