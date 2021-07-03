@@ -35,18 +35,21 @@ if (!isset($_SESSION['username'])){
                 <tr>
                     <th>Room</th>
                     <th>Capacity</th>
-                    <th>Action</th>
                 </tr>
                 </thead>
+                <?php
+                    $query = mysqli_query($connect , "SELECT * FROM room");
+                    while ($room = mysqli_fetch_array($query)){
+                ?>
                 <tbody>
                     <tr>
-                      <td>B201</td>
-                      <td>20</td>
-                      <td><div class="action">
-                          <img class="edit" src="img/edit.svg" href="#">
-                          <img class="delete" src="img/delete.svg" href="#"></div></td>
+                      <td><?php echo $room['room_name']; ?></td>
+                      <td><?php echo $room['capacity'];?></td>
                     </tr>
                 <tbody>
+                <?php
+                }
+                ?>
             </table>
         </div>
     </body>

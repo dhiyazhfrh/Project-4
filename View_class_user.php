@@ -39,13 +39,38 @@ if (!isset($_SESSION['username'])){
                     <th>Time</th>
                 </tr>
                 </thead>
+                <?php
+                    $query = mysqli_query($connect, "SELECT * FROM class_detail");
+                    while ($data = mysqli_fetch_array($query)){
+                        $class_id = $data['class_id'];
+                        $name = $data['class_name'];
+                        $lvl = $data['grade'];
+                ?>
                 <tbody>
                     <tr>
-                      <td>Pre A</td>
-                      <td>Preschool</td>
-                      <td>#</td>
-                      <td>#</td>
+                      <td><?php echo $name; ?></td>
+                      <td><?php echo $lvl; ?></td>
+                    <?php
+                        $sql2 = mysqli_query($connect, "SELECT * FROM class WHERE class_id = '$class_id'" );
+                        $data2 = mysqli_fetch_array($sql2);
+                        $room = $data2['room_id'];
+                        $time = $data2['time_id'];
+                    ?>
+                    <?php
+                        $sql3= mysqli_query($connect, "SELECT * FROM room WHERE room_id = '$room'");
+                        $data3 = mysqli_fetch_array($sql3);
+                    ?>
+                      <td><?php echo $data3['room_name']; ?></td>
+                    <?php
+                        $sql4 = mysqli_query($connect, "SELECT * FROM tbl_time WHERE time_id = '$time' ");
+                        $data4 = mysqli_fetch_array($sql4);
+                    ?>
+                      <td><?php echo $data4['code'];?></td>
                     </tr>
+                <tbody>
+                <?php
+                    }
+                ?>
             </table>
         </div>
     </body>

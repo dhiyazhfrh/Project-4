@@ -33,16 +33,27 @@ if (!isset($_SESSION['username'])){
             <table class="content-table">
                 <thead>
                 <tr>
+                    <th>Code</th>
                     <th>Day</th>
-                    <th>Time</th>
+                    <th>Start Time</th>
+                    <th>End Time </th>
                 </tr>
                 </thead>
+                <?php
+                    $query = mysqli_query($connect, "SELECT * FROM tbl_time");
+                    while ($schedule = mysqli_fetch_array($query)){ 
+                ?>
                 <tbody>
-                    <tr>
-                      <td>#</td>
-                      <td>#</td>
-                    </tr>
+                <tr>
+                    <td><?php echo $schedule['code'];?></td>
+                    <td><?php echo $schedule['day_time'];?></td>
+                    <td><?php echo $schedule['start_time'];?></td>
+                    <td><?php echo $schedule['end_time'];?></td>
+                </tr>
                 <tbody>
+                <?php
+                    }
+                ?>
             </table>
         </div>
     </body>
