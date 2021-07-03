@@ -51,7 +51,7 @@ if (!isset($_SESSION['username'])){
                                 $query1 = mysqli_query($connect, "SELECT * FROM room WHERE room_id = '$room_id'");
                                 $sql1 = mysqli_fetch_array($query1);
                             ?>
-                            <option value="<?php echo $sql1['room_name']; ?>" selected hidden><?php echo $sql1['room_name']; ?></option>
+                            <option value="<?php echo $sql1['room_id']; ?>" selected hidden><?php echo $sql1['room_name']; ?></option>
                             <?php
                             $query = mysqli_query($connect, "SELECT * FROM room");
                             $no=0;
@@ -73,7 +73,7 @@ if (!isset($_SESSION['username'])){
                                 $query2 = mysqli_query($connect, "SELECT * FROM tbl_time WHERE time_id = '$time_id'");
                                 $sql2 = mysqli_fetch_array($query2);
                             ?>
-                            <option value="<?php echo $sql2['code']; ?>" selected hidden><?php echo $sql2['code']; ?></option>
+                            <option value="<?php echo $sql2['time_id']; ?>" selected hidden><?php echo $sql2['code']; ?></option>
                             <?php
                             $query = mysqli_query($connect, "SELECT * FROM tbl_time");
                             $no=0;
