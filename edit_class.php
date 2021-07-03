@@ -1,3 +1,10 @@
+<?php
+include "koneksi.php";
+session_start();
+if (!isset($_SESSION['username'])){
+    header('location:login.php');
+}
+?>
 <html>
     <head>
         <meta charset="utf-8">
@@ -21,7 +28,7 @@
 
                 ?>
                 
-                <form action="Input_class_process.php" method="POST">
+                <form action="update_class.php" method="POST">
                 <table class="input-1">
                     <tr>
                         <td><h2>Class Name</h2></td>

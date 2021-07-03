@@ -1,3 +1,10 @@
+<?php
+include "koneksi.php";
+session_start();
+if (!isset($_SESSION['username'])){
+    header('location:login.php');
+}
+?>
 <html>
     <head>
         <meta charset="utf-8">
@@ -14,31 +21,34 @@
                 <h5>Edit Student</h5>
                 <?php
                 
-                    $id = isset($_GET['time_id'])? $_GET['time_id']:'';
+                    $id = $_GET['id'];
 
-                    $query = mysqli_query($connect, "SELECT * FROM tbl_time WHERE time_id = '$id'");
-                    $time = mysqli_fetch_array($query);
+                    $query = mysqli_query($connect, "SELECT * FROM student WHERE student_id = '$id'");
+                    $data = mysqli_fetch_array($query);
 
                 ?>
                 
-                <form action="Input_student_process.php" method="POST">
+                <form action="update_student.php" method="POST">
                 <table class="input-1">
                     <tr>
                         <td><h2>Full Name</h2></td>
                         <td>
-                            <input type="text" name="name" class="name" value="<?php echo $time['code']; ?>">
+                            <input type="text" name="fullname" class="name" value="<?php echo $data['fullname']; ?>">
                         </td>
                     </tr>
                     <tr>
                         <td><h2>Gender</h2></td>
                         <td>
-                            <input type="text" name="gender" class="gender" value="<?php echo $time['code']; ?>">
+                            <select name="gender" class="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
                         </td>
                     </tr>
 
                     <td><h2>Date of Birth</h2></td>
                         <td>
-                        <input type="date" name="dob" class="dob" value="<?php echo $time['code']; ?>">
+                        <input type="date" name="date" class="dob" value="<?php echo $data['dob']; ?>">
                         </td>
                     </tr>
 
@@ -46,12 +56,12 @@
                         <td>
                         <select name="cl" class="cl">
                             <?php
-                            $query = mysqli_query($connect, "SELECT * FROM room");
+                            $query = mysqli_query($connect, "SELECT * FROM class_detail");
                             $no=0;
                             while ($room = mysqli_fetch_array($query)){
                             $no++;
                             ?>
-                            <option value="<?php echo $room['time_id'];?>"><?php echo $room['code'];?></option>
+                            <option value="<?php echo $room['detail_id'];?>"><?php echo $room['class_name'];?></option>
                             <?php
                                 }
                             ?>
@@ -61,7 +71,7 @@
 
                     <tr>
                         <td colspan="2">
-                            <input type="hidden" name="id" value="<?php echo $id; ?>">
+                            <input type="hidden" name="id" value="<?php echo $data['student_id']; ?>">
                             <input type="submit" name="submit" value="Update" class="btn">
                         </td>
                     </tr>

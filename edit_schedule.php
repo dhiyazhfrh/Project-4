@@ -27,7 +27,7 @@ if (!isset($_SESSION['username'])){
 
                 ?>
                 
-                <form action="Input_schedule_process.php" method="POST">
+                <form action="update_schedule.php" method="POST">
                 <table class="input-1">
                     <tr>
                         <td><h2>Code</h2></td>
