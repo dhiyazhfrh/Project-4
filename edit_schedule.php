@@ -1,3 +1,10 @@
+<?php
+include "koneksi.php";
+session_start();
+if (!isset($_SESSION['username'])){
+    header('location:login.php');
+}
+?>
 <html>
     <head>
         <meta charset="utf-8">
@@ -14,8 +21,7 @@
                 <h5>Edit Schedule</h5>
                 <?php
                 
-                    $id = isset($_GET['time_id'])? $_GET['time_id']:'';
-
+                    $id = isset($_GET['id'])? $_GET['id']:'';
                     $query = mysqli_query($connect, "SELECT * FROM tbl_time WHERE time_id = '$id'");
                     $time = mysqli_fetch_array($query);
 
