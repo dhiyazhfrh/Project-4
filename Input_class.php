@@ -45,7 +45,7 @@ if (!isset($_SESSION['username'])){
                     </div>
                     <div class="input-1">
                         <h2>Schedule</h2>
-                        <select name="time" class="time">
+                        <select name="time_id" class="time">
                                 <?php
                                 $query2 = mysqli_query($connect, "SELECT * FROM tbl_time");
                                 $no = 0;
