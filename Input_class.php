@@ -46,7 +46,17 @@ if (!isset($_SESSION['username'])){
                     <div class="input-1">
                         <h2>Schedule</h2>
                         <select name="time" class="time">
-                            <option value="">-- Choose time --</option></select>
+                                <?php
+                                $query2 = mysqli_query($connect, "SELECT * FROM tbl_time");
+                                $no = 0;
+                                while ($time = mysqli_fetch_array($query2)){
+                                $no++;
+                                ?>
+                            <option value="<?php echo $time['time_id'] ?>"><?php echo $time['code'] ?></option>
+                            <?php
+                                }
+                            ?>
+                            </select>
                     </div>
                     <input type="submit" class="btn" value="Save">
                 </form>
