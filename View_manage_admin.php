@@ -56,7 +56,7 @@ if (!isset($_SESSION['username'])){
                       <td><?php echo $data['authority'];?></td>
                       <td><div class="action">
                           <img class="edit" src="img/edit.svg" href="#">
-                          <img class="delete" src="img/delete.svg" href="#"></div></td>
+                          <a href="delete_akun.php?id=<?php echo $data['id'] ?>"><img class="delete" src="img/delete.svg" ></a></div></td>
                     </tr>
                 <tbody>
                 <?php
