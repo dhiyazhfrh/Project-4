@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 03, 2021 at 08:18 AM
+-- Generation Time: Jul 03, 2021 at 09:23 AM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.19
 
@@ -142,17 +142,21 @@ INSERT INTO `tbl_time` (`time_id`, `code`, `day_time`, `start_time`, `end_time`)
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(30) NOT NULL,
-  `password` varchar(30) NOT NULL,
-  `level` varchar(30) NOT NULL,
+  `fullname` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `phone` varchar(13) NOT NULL,
+  `pass` varchar(30) NOT NULL,
+  `authority` varchar(30) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `username`, `password`, `level`) VALUES
-(1, 'kideadmin', 'evergarden', 'admin');
+INSERT INTO `user` (`id`, `username`, `fullname`, `email`, `phone`, `pass`, `authority`) VALUES
+(1, 'kideadmin', 'Surya', 'surya@gmail.com', '0812083212031', 'evergarden', 'admin'),
+(2, 'Surya', 'Surya', 'surya@gmail.com', '08123109831', 'skyriee', 'staff');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
