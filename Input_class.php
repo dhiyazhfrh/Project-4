@@ -19,7 +19,7 @@ if (!isset($_SESSION['username'])){
             <div class="input">
                 <a href="View_class_admin.php"> < Back</a>
                 <h5>New Class</h5>
-                <form action="#input" name="schedule" method="post">
+                <form action="Input_class_process.php" name="schedule" method="post">
                     <div class="input-1">
                         <h2>Class Name</h2>
                         <input type="text" name="class" class="class_name">
