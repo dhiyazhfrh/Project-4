@@ -51,8 +51,8 @@ if (!isset($_SESSION['username'])){
                       <td><?php echo $room['room_name']; ?></td>
                       <td><?php echo $room['capacity'];?></td>
                       <td><div class="action">
-                            <a href="edit_room.php"><img class="edit" src="img/edit.svg"></a>
-                            <a href="delete_room.php?id=<?php echo $room['room_id']?>"><img class="delete" src="img/delete.svg"></a></td></div>
+                            <a href="edit_room.php?id=<?php echo $room['room_id']; ?>"><img class="edit" src="img/edit.svg"></a>
+                            <a href="delete_room.php?id=<?php echo $room['room_id'];?>"><img class="delete" src="img/delete.svg"></a></td></div>
                     </tr>
                 <tbody>
                 <?php

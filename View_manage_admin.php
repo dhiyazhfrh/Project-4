@@ -55,7 +55,7 @@ if (!isset($_SESSION['username'])){
                       <td><?php echo $data['phone'];?></td>
                       <td><?php echo $data['authority'];?></td>
                       <td><div class="action">
-                          <img class="edit" src="img/edit.svg" href="#">
+                          <a href="edit_manage.php?id=<?php echo $data['id']?>"><img class="edit" src="img/edit.svg">
                           <a href="delete_akun.php?id=<?php echo $data['id'] ?>"><img class="delete" src="img/delete.svg" ></a></div></td>
                     </tr>
                 <tbody>

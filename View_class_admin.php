@@ -72,7 +72,7 @@ if (!isset($_SESSION['username'])){
                     ?>
                       <td><?php echo $data4['code'];?></td>
                       <td><div class="action">
-                          <img class="edit" src="img/edit.svg" href="#">
+                          <a href="edit_class.php?id=<?php echo $data['detail_id'];?>"><img class="edit" src="img/edit.svg" href="#">
                           <a href="delete_class.php?id=<?php echo $data['detail_id'];?>"><img class="delete" src="img/delete.svg" ></a></div></td>
                     </tr>
                 <tbody>

@@ -65,7 +65,7 @@ if (!isset($_SESSION['username'])){
                         ?>
                       <td><?php echo $sql['class_name'];?></td>
                       <td><div class="action">
-                          <img class="edit" src="img/edit.svg" href="#">
+                          <a href="edit_student.php?id=<?php echo $data['student_id'];?>"><img class="edit" src="img/edit.svg" href="#">
                           <a href="delete_student.php?id=<?php echo $data['student_id'];?>"><img class="delete" src="img/delete.svg"></a>
                         </div></td>
                     </tr>
