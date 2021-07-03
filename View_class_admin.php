@@ -48,15 +48,11 @@ if (!isset($_SESSION['username'])){
                     $query = mysqli_query($connect, "SELECT * FROM class_detail");
                     while ($data = mysqli_fetch_array($query)){
                         $class_id = $data['class_id'];
+                        $name = $data['class_name'];
+                        $lvl = $data['grade'];
                 ?>
                 <tbody>
                     <tr>
-                    <?php
-                        $sql1 = mysqli_query($connect, "SELECT * FROM class_detail");
-                        $data1 = mysqli_fetch_array($sql1);
-                        $name = $data1['class_name'];
-                        $lvl = $data1['grade'];
-                    ?>
                       <td><?php echo $name; ?></td>
                       <td><?php echo $lvl; ?></td>
                     <?php
