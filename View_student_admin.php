@@ -44,17 +44,35 @@ if (!isset($_SESSION['username'])){
                     <th>Action</th>
                 </tr>
                 </thead>
+                <?php
+                    $query = mysqli_query($connect, "SELECT * FROM student");
+                    while ($data = mysqli_fetch_array($query)){
+                        $name = $data['fullname'];
+                        $gender = $data['gender'];
+                        $dob = $data['dob'];
+                        $class = $data['detail_id'];
+                ?>
+
                 <tbody>
                     <tr>
-                      <td>Dhiya</td>
-                      <td>#</td>
-                      <td>#</td>
-                      <td>#</td>
+                      <td><?php echo $name; ?></td>
+                      <td><?php echo $gender; ?></td>
+                      <td><?php echo $dob; ?></td>
+                        <?php
+                            $query2 = mysqli_query($connect, "SELECT * FROM class_detail WHERE detail_id = '$class'");
+                            $sql = mysqli_fetch_array($query2);
+                            
+                        ?>
+                      <td><?php echo $sql['class_name'];?></td>
                       <td><div class="action">
                           <img class="edit" src="img/edit.svg" href="#">
                           <img class="delete" src="img/delete.svg" href="#"></div></td>
                     </tr>
                 <tbody>
+                <?php
+                    }
+                ?>
+
             </table>
         </div>
     </body>

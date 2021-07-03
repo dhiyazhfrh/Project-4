@@ -19,23 +19,36 @@ if (!isset($_SESSION['username'])){
             <div class="input">
                 <a href="View_student_admin.php"> < Back</a>
                 <h5>New Student</h5>
-                <form action="#input" name="time" method="post">
+                <form action="Input_student_process.php" name="time" method="post">
                     <div class="input-1">
                         <h2>Full Name</h2>
-                        <input type="text" class="name">
+                        <input type="text" name="fullname" class="name">
                     </div>
                     <div class="input-1">
                         <h2>Gender</h2>
-                        <input type="text" class="gender">
+                        <select name="gender" class="cl">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
                     </div>
                     <div class="input-1">
                         <h2>Date of Birth</h2>
-                        <input type="date" class="dob">
+                        <input type="date" name="date" class="dob">
                     </div>
                     <div class="input-1">
                         <h2>Class</h2>
                         <select name="cl" class="cl">
-                            <option value="">-- Choose class --</option></select>
+                            <?php
+                                $query = mysqli_query($connect, "SELECT * FROM class_detail");
+                                $no=0;
+                                while ($class = mysqli_fetch_array($query)){
+                                $no++;
+                            ?>
+                            <option value="<?php echo $class['detail_id']; ?>"><?php echo $class['class_name']; ?></option>
+                            <?php
+                                }
+                            ?>
+                            </select>
                     </div>
                     <input type="submit" class="btn" value="Save">
                 </form>

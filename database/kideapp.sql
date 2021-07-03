@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 03, 2021 at 05:59 AM
+-- Generation Time: Jul 03, 2021 at 08:18 AM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.19
 
@@ -33,14 +33,15 @@ CREATE TABLE IF NOT EXISTS `class` (
   `room_id` int(11) NOT NULL,
   `time_id` int(11) NOT NULL,
   PRIMARY KEY (`class_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `class`
 --
 
 INSERT INTO `class` (`class_id`, `room_id`, `time_id`) VALUES
-(1, 9, 6);
+(1, 9, 6),
+(2, 8, 5);
 
 -- --------------------------------------------------------
 
@@ -56,14 +57,15 @@ CREATE TABLE IF NOT EXISTS `class_detail` (
   `room_id` int(11) NOT NULL,
   `time_id` int(11) NOT NULL,
   PRIMARY KEY (`detail_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `class_detail`
 --
 
 INSERT INTO `class_detail` (`detail_id`, `class_name`, `grade`, `class_id`, `room_id`, `time_id`) VALUES
-(1, 'Pre A', 'Preschool', 1, 9, 6);
+(1, 'Pre A', 'Preschool', 1, 9, 6),
+(2, 'Pre B', 'Preschool 2', 2, 8, 5);
 
 -- --------------------------------------------------------
 
@@ -85,6 +87,28 @@ CREATE TABLE IF NOT EXISTS `room` (
 INSERT INTO `room` (`room_id`, `room_name`, `capacity`) VALUES
 (8, 'sample2', 23),
 (9, 'sample4', 25);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student`
+--
+
+CREATE TABLE IF NOT EXISTS `student` (
+  `student_id` int(11) NOT NULL AUTO_INCREMENT,
+  `fullname` varchar(50) NOT NULL,
+  `gender` varchar(10) NOT NULL,
+  `dob` date NOT NULL,
+  `detail_id` int(11) NOT NULL,
+  PRIMARY KEY (`student_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `student`
+--
+
+INSERT INTO `student` (`student_id`, `fullname`, `gender`, `dob`, `detail_id`) VALUES
+(1, 'Surya', 'male', '2021-07-07', 2);
 
 -- --------------------------------------------------------
 
